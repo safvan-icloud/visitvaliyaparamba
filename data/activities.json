@@ -1,0 +1,56 @@
+[
+  {
+    "id": "activity-1",
+    "title": "Beach Walk at Sunrise",
+    "category": "Beaches",
+    "description": "A calm morning walk along the shore with sea breeze and golden light.",
+    "duration": "1.5 hours",
+    "location": "Valiyaparamba Beach",
+    "tags": ["Beaches", "Photography", "Nature"]
+  },
+  {
+    "id": "activity-2",
+    "title": "Backwater Cruise",
+    "category": "Backwaters",
+    "description": "Cruise through water channels lined with palms and local villages.",
+    "duration": "2 hours",
+    "location": "Waterways",
+    "tags": ["Backwaters", "Food", "Nature"]
+  },
+  {
+    "id": "activity-3",
+    "title": "Kayaking Through Mangroves",
+    "category": "Kayaking",
+    "description": "Explore hidden routes and calm water channels at your own pace.",
+    "duration": "2 hours",
+    "location": "Mangrove Edge",
+    "tags": ["Kayaking", "Adventure", "Nature"]
+  },
+  {
+    "id": "activity-4",
+    "title": "Fishing Village Experience",
+    "category": "Fishing",
+    "description": "Spend time with local fishers and learn about the region’s coastal rhythm.",
+    "duration": "2 hours",
+    "location": "Fishing Jetty",
+    "tags": ["Fishing", "Culture", "Food"]
+  },
+  {
+    "id": "activity-5",
+    "title": "Golden Hour Photo Trail",
+    "category": "Photography",
+    "description": "Capture the best angles across beaches, bridges, and shady coastal roads.",
+    "duration": "1 hour",
+    "location": "Sunset Point",
+    "tags": ["Photography", "Beaches", "Nature"]
+  },
+  {
+    "id": "activity-6",
+    "title": "Seafood Dinner Experience",
+    "category": "Food",
+    "description": "Enjoy a premium coastal dinner featuring Kerala seafood specialties.",
+    "duration": "1.5 hours",
+    "location": "Beachfront Dining",
+    "tags": ["Food", "Resorts", "Luxury"]
+  }
+]

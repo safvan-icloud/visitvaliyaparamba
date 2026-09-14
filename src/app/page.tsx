@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { TravelAssistantWidget } from '@/components/TravelAssistantWidget';
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -13,6 +14,7 @@ const navItems = [
   { label: 'Stay', href: '#stay' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Blog', href: '#blog' },
+  { label: 'AI Trip Planner', href: '/ai-planner' },
   { label: 'Travel Guide', href: '#guide' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -154,7 +156,28 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [isAudioOn, setIsAudioOn] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const toggleAudio = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (audio.paused) {
+      try {
+        audio.volume = 0.04;
+        audio.muted = false;
+        await audio.play();
+        setIsAudioOn(true);
+      } catch {
+        setIsAudioOn(false);
+      }
+      return;
+    }
+
+    audio.pause();
+    setIsAudioOn(false);
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -166,21 +189,6 @@ export default function Home() {
     onScroll();
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  useEffect(() => {
-    const startAudio = async () => {
-      if (!audioRef.current) return;
-      audioRef.current.volume = 0.2;
-      try {
-        await audioRef.current.play();
-      } catch {
-        // Browser may block autoplay until the first user interaction.
-      }
-    };
-
-    window.addEventListener('pointerdown', startAudio, { once: true });
-    return () => window.removeEventListener('pointerdown', startAudio);
   }, []);
 
   useEffect(() => {
@@ -252,7 +260,7 @@ export default function Home() {
       </header>
 
       <section id="home" className="hero-section">
-        <audio ref={audioRef} src="/media/water-ambient.mp3" loop preload="auto" style={{ display: 'none' }} />
+        <audio ref={audioRef} src="/media/yoga-light.wav" loop preload="auto" style={{ display: 'none' }} />
         <div className="hero-video-wrap">
           <video
             src="/media/hero-kayak.mp4"
@@ -276,6 +284,9 @@ export default function Home() {
             <div className="hero-actions">
               <a href="#destinations" className="btn btn-primary">Explore Now</a>
               <a href="#contact" className="btn btn-secondary">Plan My Journey</a>
+              <button type="button" className="btn btn-secondary sound-toggle" onClick={toggleAudio}>
+                {isAudioOn ? '🔊 Yoga sound on' : '🔈 Yoga sound off'}
+              </button>
             </div>
           </div>
           <div className="scroll-indicator">
@@ -599,6 +610,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <TravelAssistantWidget />
     </main>
   );
 }

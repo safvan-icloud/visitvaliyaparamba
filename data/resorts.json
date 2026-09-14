@@ -1,0 +1,29 @@
+[
+  {
+    "id": "resort-1",
+    "name": "Coastal Haven Retreat",
+    "rating": 4.9,
+    "priceRange": "₹8,000 - ₹12,000 / night",
+    "description": "A luxury seaside stay with private decks, spa treatments, and sunrise views.",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+    "tag": "Luxury"
+  },
+  {
+    "id": "resort-2",
+    "name": "Backwater Palm Stay",
+    "rating": 4.7,
+    "priceRange": "₹5,000 - ₹8,000 / night",
+    "description": "Quiet rooms with a village edge feel, ideal for couples and nature lovers.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "tag": "Couple"
+  },
+  {
+    "id": "resort-3",
+    "name": "Mangrove Escape Lodge",
+    "rating": 4.8,
+    "priceRange": "₹6,000 - ₹9,500 / night",
+    "description": "A premium eco-resort surrounded by waterways, greenery, and early-morning calm.",
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
+    "tag": "Nature"
+  }
+]

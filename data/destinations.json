@@ -1,0 +1,38 @@
+[
+  {
+    "id": "beach-1",
+    "name": "Valiyaparamba Beach",
+    "type": "Beach",
+    "description": "Golden sands and gentle waves with a calm sunrise coastline.",
+    "tags": ["Beaches", "Nature", "Photography"],
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "area": "Coastal South"
+  },
+  {
+    "id": "backwater-1",
+    "name": "Backwater Cruise",
+    "type": "Backwater",
+    "description": "A peaceful glide through Kerala’s scenic canals and village banks.",
+    "tags": ["Backwaters", "Food", "Nature"],
+    "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+    "area": "Waterways"
+  },
+  {
+    "id": "kayak-1",
+    "name": "Mangrove Kayaking",
+    "type": "Adventure",
+    "description": "Explore calm waters and secluded mangrove channels at a slow rhythm.",
+    "tags": ["Kayaking", "Nature", "Adventure"],
+    "image": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "area": "Mangrove Edge"
+  },
+  {
+    "id": "sunset-1",
+    "name": "Sunset Point",
+    "type": "Scenic",
+    "description": "A dramatic coastal sunset with panoramic views and photo-friendly light.",
+    "tags": ["Photography", "Beaches", "Nature"],
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "area": "Northern Coast"
+  }
+]
